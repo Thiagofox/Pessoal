@@ -1,0 +1,131 @@
+.meals {
+  align-items: center;
+  background: #0fa36b;
+  color: #464646;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+}
+
+.rocksGlass {
+  animation: shake 1s infinite ease;
+  max-height: 80vh;
+}
+
+/*
+#iceLeft {
+  animation: clink .8s infinite ease;
+  opacity: 0.6;
+  transform-origin: 36px 66px;
+}
+
+#iceRight {
+  animation: clink .8s .2s infinite ease;
+  opacity: 0.6;
+  transform-origin: 60px 78px;
+}
+*/
+
+/* https://codeburst.io/how-to-create-horizontal-scrolling-containers-d8069651e9c6 */
+.start-btn {
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+}
+
+.recommendations-box {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.recommended-box {
+  background: white;
+  border-radius: 6px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  flex: 0 0 auto;
+  height: 172px;
+  margin: 10px;
+  width: 161px;
+}
+
+.recommended-box-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 6px 6px 0 0;
+  height: 109px;
+  width: 161px;
+}
+
+.recommended-box-category {
+  color: darkgray;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0 5px;
+}
+
+.recommended-box-name {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 5px;
+}
+
+.meals > .logo {
+  animation: shake 1.5s infinite ease;
+  color: aliceblue;
+  font-family: Montserrat , sans-serif;
+  font-size: 3em;
+  font-weight: 900;
+}
+
+@keyframes shake {
+
+  0% {
+    transform: rotate(5deg);
+  }
+
+  50% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(5deg);
+  }
+}
+
+@keyframes clink {
+
+  0% {
+    transform: rotate(-10deg);
+  }
+
+  50% {
+    transform: rotate(20deg);
+  }
+
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+.footer {
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+}
+
+.footer > * {
+  padding: 10px;
+}
+
+.ingredient-checked {
+  text-decoration: line-through;
+}
