@@ -1,0 +1,4 @@
+use('todo_list');
+db.tasks.insertOne([
+  { "text": "Tarefa 1", "active": "true", "edit": "true"}
+]);
